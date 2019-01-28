@@ -1,0 +1,5 @@
+#Create a node.js app
+#template : express + ejs
+
+express -e ejs cytoneojs
+
