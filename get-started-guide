@@ -1,5 +1,7 @@
 #Create a node.js app
 #template : express + ejs
+express cytoneojs --view=ejs
 
-express -e ejs cytoneojs
+#to support .env config.
+npm install --save fs dotenv
 
