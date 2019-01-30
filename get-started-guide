@@ -36,4 +36,8 @@ npm install serve-favicon morgan method-override express-session body-parser mul
 var favicon = require('serve-favicon');
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
+#add pug-bootstrap template 
+npm install jade-bootstrap@1.0.11
+http://rajasegar.github.io/PUG-Bootstrap/getting-started.html
+
 
