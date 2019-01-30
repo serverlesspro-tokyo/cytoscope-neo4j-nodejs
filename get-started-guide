@@ -23,3 +23,19 @@ express --view=pug /your_path/nodepug
 #to support .env config.
 npm install --save fs dotenv
 
+#work help tools
+npm install -g jshint
+
+################
+ISSUE:
+Error: Most middleware (like favicon) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+
+Fix:
+npm install --save serve-favicon
+var favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
+
+
+
+
+
