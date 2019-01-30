@@ -1,6 +1,24 @@
-#Create a node.js app
-#template : express + ejs
-express cytoneojs --view=ejs
+mkdir nodepug
+cd nodepug
+npm init
+npm install express --save
+npm install express-generator -g
+
+#version info
+node -v
+v10.15.1
+npm --version
+6.4.1
+express --version
+4.16.0
+
+#create a app named nodepug via express + pug view.
+express --view=pug /your_path/nodepug
+
+#an warning will show as below, if /your_path/nodepug exists
+#destination is not empty, continue? [y/N] y  
+#if use ejs
+#express --view=ejs  /your_path/nodepug
 
 #to support .env config.
 npm install --save fs dotenv
